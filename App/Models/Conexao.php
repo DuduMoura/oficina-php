@@ -3,10 +3,10 @@
 class Conexao{
     private $db;
     private $stmt;
-    private $host = 'mysql';
+    private $host = 'localhost';
     private $db_name = 'news';
     private $db_username = 'root';
-    private $db_password = '12345';
+    private $db_password = '';
 
     function __construct()
     {

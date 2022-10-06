@@ -30,7 +30,7 @@ class Uteis{
 	}
 	
 	function getMensagem(){
-		$this->mensagem = $_SESSION['mensagem'];
+		$this->mensagem = $_SESSION['mensagem'] ?? '';
 		unset($_SESSION['mensagem']);
 		echo $this->mensagem;
 	}

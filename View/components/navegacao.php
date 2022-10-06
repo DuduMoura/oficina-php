@@ -10,7 +10,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/View/inicio/index.php">Início </a>
                 </li>
-                <?php if ($_SESSION['user']): ?>
+                <?php if (isset($_SESSION['user'])): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="/View/painel/index.php?p=news">Notícias</a>
                     </li>

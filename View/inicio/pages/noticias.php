@@ -2,7 +2,7 @@
     <div class="col-12">
         <h2>
         <?php
-            echo $_SESSION['user'] ? 'Olá ' . $_SESSION['user']['nome'] : ''
+            echo isset($_SESSION['user']) ? 'Olá ' . $_SESSION['user']['nome'] : ''
         ?>
         </h2>
     </div>
