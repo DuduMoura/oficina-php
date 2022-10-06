@@ -1,11 +1,16 @@
-<div class="row">
+<div class="row mt-4">
     <div class="col-12">
+        <a href="index.php" class="btn btn-dark">Voltar</a>
         <div class="card">
-            <img class="card-img-top" src="https://www.einerd.com.br/wp-content/uploads/2017/03/photodune-9235903-game-m-16x91-890x501.jpg" alt="Card image cap">
+            <img class="card-img-top" src="<?= $item['image_link'] ?>">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><?= $item['titulo'] ?></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><?= $item['reporter'] ?></h6>
+<span class="badge badge-info"><?= date('M d', strtotime($item['criado_em'])); ?></span>
+                
+<span class="badge badge-info"><?= date('H:i', strtotime($item['criado_em'])) ?></span>
+                <p class="card-text"><?= $item['assunto'] ?></p>]
+                <p class="card-text"><?= $item['descricao'] ?></p>
             </div>
         </div>
     </div>
