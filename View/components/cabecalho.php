@@ -14,6 +14,10 @@
     <?php require_once 'navegacao.php' ?>
 
     <main>
+        <?php 
+            $util = new Uteis(); 
+            $util->getMensagem();
+        ?>
         <div class="container">
             <!-- Código em PHP -->
         

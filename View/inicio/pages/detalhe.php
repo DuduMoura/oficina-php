@@ -4,12 +4,13 @@
         <div class="card">
             <img class="card-img-top" src="<?= $item['image_link'] ?>">
             <div class="card-body">
-                <h5 class="card-title"><?= $item['titulo'] ?></h5>
-                <h6 class="card-subtitle mb-2 text-muted"><?= $item['reporter'] ?></h6>
-<span class="badge badge-info"><?= date('M d', strtotime($item['criado_em'])); ?></span>
-                
-<span class="badge badge-info"><?= date('H:i', strtotime($item['criado_em'])) ?></span>
-                <p class="card-text"><?= $item['assunto'] ?></p>]
+                <h3 class="card-title"><?= $item['titulo'] ?></h3>
+                <div class="d-flex justify-content-between align-itens-center">
+                    <h6 class="card-subtitle mb-2 text-muted">Reporter: <?= $item['reporter'] ?> <br>
+                    Local: <?= $item['local'] ?></h6>
+                    <span><?= date('d/m/Y', strtotime($item['criado_em'])); ?></span>
+                </div>
+                <b>Descrição:</b>
                 <p class="card-text"><?= $item['descricao'] ?></p>
             </div>
         </div>

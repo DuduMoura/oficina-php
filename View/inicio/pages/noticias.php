@@ -1,4 +1,11 @@
-<div class="row">
+<div class="row mt-3">
+    <div class="col-12">
+        <h2>
+        <?php
+            echo $_SESSION['user'] ? 'Olá ' . $_SESSION['user']['nome'] : ''
+        ?>
+        </h2>
+    </div>
     <?php foreach ($noticias as $item): ?>
     <div class="col-12 col-md-4">
         <div class="card" style="width: 18rem;">
